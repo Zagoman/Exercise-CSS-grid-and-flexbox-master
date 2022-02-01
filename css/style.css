@@ -1,0 +1,34 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Avenir, Roboto, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+.deals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+article {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+article img {
+  order: -1;
+}
+article button {
+  background: teal;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  margin-top: auto;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+}
